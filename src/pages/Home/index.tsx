@@ -1,34 +1,13 @@
 import React from 'react'
-import { Footer, Header, Icon, Main, Nav, Section } from './styled'
+import { Main, Section } from './styled'
 import homeImg from '../../assets/homeImg.jpg'
-import { FiInstagram, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
+import { Footers } from '../../components/footer'
+import { Headers } from '../../components/header'
 
 export function Home() {
   return (
     <Main>
-      <Header>
-        <h1>
-          <a href="" className="logo">
-            Jhonatan Scarpa
-          </a>
-        </h1>
-        <Nav>
-          <ul>
-            <li>
-              <a href="">Inicio</a>
-            </li>
-            <li>
-              <a href="">Projetos</a>
-            </li>
-            <li>
-              <a href="">Trajetória</a>
-            </li>
-            <li>
-              <a href="">Contato</a>
-            </li>
-          </ul>
-        </Nav>
-      </Header>
+      <Headers />
       <Section id="home">
         <div className="spaceHome">
           <div>
@@ -53,31 +32,7 @@ export function Home() {
           </div>
         </div>
       </Section>
-      <Footer>
-        <h1>
-          <a href="#" className="logo">
-            Jhonatan Scarpa
-          </a>
-        </h1>
-        <br />
-        <br />
-        <p>Todos os direitos reservados 2021</p>
-        <Icon>
-          <a href="mailto:jhonatan.scarpa@outlook.com">
-            <FiMail />
-          </a>
-
-          <a href="https://github.com/jhonscarpa" target="_blank">
-            <FiGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/jhonscarpa/" target="_blank">
-            <FiLinkedin />
-          </a>
-          <a href="https://www.instagram.com/jhon_scarpa/" target="_blank">
-            <FiInstagram />
-          </a>
-        </Icon>
-      </Footer>
+      <Footers />
     </Main>
   )
 }
