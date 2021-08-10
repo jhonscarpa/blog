@@ -9,8 +9,7 @@ export function Footers() {
           Jhonatan Scarpa
         </a>
       </h1>
-      <br />
-      <br />
+
       <p>Todos os direitos reservados 2021</p>
       <Icon>
         <a href="mailto:jhonatan.scarpa@outlook.com">

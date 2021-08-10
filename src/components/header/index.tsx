@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header, Nav } from './styled'
+import { Link } from 'react-router-dom'
 export function Headers() {
   return (
     <Header>
@@ -11,16 +12,16 @@ export function Headers() {
       <Nav>
         <ul>
           <li>
-            <a href="">Inicio</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">Projetos</a>
+            <Link to="/projects">Projetos</Link>
           </li>
           <li>
-            <a href="">Trajetória</a>
+            <Link to="/trajectory">Trajetoria</Link>
           </li>
           <li>
-            <a href="">Contato</a>
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
       </Nav>

@@ -10,7 +10,7 @@ export const Header = styled.header`
   z-index: 100;
   top: 0;
   left: 0;
-  background: whitesmoke;
+  background: #9775aa;
 
   gap: 2rem;
 

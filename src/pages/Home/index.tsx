@@ -1,5 +1,5 @@
 import React from 'react'
-import { Main, Section } from './styled'
+import { Main, RowCenterBetween, Section } from './styled'
 import homeImg from '../../assets/homeImg.jpg'
 import { Footers } from '../../components/footer'
 import { Headers } from '../../components/header'
@@ -8,8 +8,8 @@ export function Home() {
   return (
     <Main>
       <Headers />
-      <Section id="home">
-        <div className="spaceHome">
+      <Section>
+        <RowCenterBetween>
           <div>
             <img src={homeImg} alt="Jhonatan Scarpa" />
           </div>
@@ -30,7 +30,7 @@ export function Home() {
               meu objetivo é um dia ser full Stack e um dos melhores na área.
             </p>
           </div>
-        </div>
+        </RowCenterBetween>
       </Section>
       <Footers />
     </Main>

@@ -2,27 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  background-color: #bdbdbd;
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: inline-block;
-  }
+  background-color: #764b8e;
+`
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  h1 {
-    font: 700 1.5rem 'Playfair Display', sans-serif;
-  }
+export const RowCenterBetween = styled.div`
+  margin: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 `
 
 export const Section = styled.section`
-  margin: 1.5rem;
-  padding: 1.5rem;
-  margin-top: 6rem;
+  padding-top: 5rem;
+  justify-content: space-between;
 
   .spaceHome {
     display: inline-block;
@@ -41,13 +35,6 @@ export const Section = styled.section`
     position: relative;
     max-width: 40rem;
     left: 2rem;
-
-    p {
-      font: 300 1.3rem 'Open Sans Condensed', sans-serif;
-
-      & a {
-        color: blue;
-      }
-    }
+    text-align: justify;
   }
 `
